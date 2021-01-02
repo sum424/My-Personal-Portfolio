@@ -218,8 +218,141 @@ hr,h2,h3,p {
 }
 
 /* media queries */
+@media screen and (max-width: 1200px) {
+    .typo h1 {
+        text-align: center;
+        font-size: 4rem;
+    }
 
-@media screen and (max-width: 580px) {
+    .typo h3 {
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    body {
+        overflow-x: hidden;
+    }
+   
+    
+    #home img {
+        margin: 0;
+    }
+
+    .navbar ul li {
+        margin: 25px 0;
+        width: 25%;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+   
+    .navbar {
+        width: 95;
+    }
+} 
+
+@media screen and (max-width: 685px) {
+    body {
+        overflow-x: hidden;
+    }
+   
+    
+    #home img {
+        margin: 10px auto 0;
+    }
+
+    
+    .typo h1 {
+        text-align: center;
+        font-size: 3.5rem;
+    }
+
+    .typo h3 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .navbar {
+        width: 80%;
+    }
+
+    .navbar ul li {
+        margin: 0px 0;
+        width: 0%;
+        padding: 0;
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width: 570px) {
+    body {
+        /* overflow-x: hidden; */
+    }
+    
+    /* for navbar */
+    .burger-nav {
+        display: block;
+        height: 40px;
+        width: 125%;
+        cursor: pointer;
+        background: url('../images/burger.png') no-repeat 100% center;
+        background-color: #f1f2f3;
+    }
+
+    #home img {
+        
+        padding: 0;
+    }
+
+    .navbar ul {
+        overflow: hidden;
+        height: 0;
+    }
+
+    .navbar ul.open {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        float: none;
+        text-align: left;
+        width: 125%;
+        margin: 0;
+    }
+
+    .navbar ul li a {
+        color: #333;
+        padding: 10px;
+        border-bottom: 1px dashed #774023;
+        display: block;
+        margin: 0;
+    }
+
+
+
+    /*  */
+
+    .typo h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .typo h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
 
     /* for about */
     #about {
@@ -242,6 +375,10 @@ hr,h2,h3,p {
 }
 
 @media screen and (max-width: 425px) {
+    body {
+        overflow-x: hidden;
+    }
+   
 
     /* for footer */
     #footer h1 {
@@ -312,10 +449,6 @@ hr,h2,h3,p {
         border-radius: 50%;
 
     }
-}
-
-@media screen and (min-width: 250px) {
-    
 }
 
 
