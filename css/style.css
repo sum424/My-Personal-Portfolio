@@ -13,6 +13,7 @@
 
 #home {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -64,11 +65,13 @@ img {
     color: #ffffff;
 }
 
+/* about section */
+
 #about {
-    height: 340px;
+
     width: 50vw;
     text-align: center;
-    margin-left: 330px;
+    margin-left: 25%;
     margin-top: 50px;
     color: #333;
   
@@ -170,8 +173,9 @@ hr,h2,h3,p {
     color: #333;
 }
 
+/* footer section */
+
 #footer {
-    height: 400px;
     background: #333333;
     color: #ffffff;
 }
@@ -213,6 +217,106 @@ hr,h2,h3,p {
     text-align: center;
 }
 
+/* media queries */
+
+@media screen and (max-width: 580px) {
+
+    /* for about */
+    #about {
+        width: 50%;
+    }
+
+    /* for footer */
+    #footer h1 {
+        font-size: 4rem;
+    }
+
+    .icon-btn {
+        margin-top: 10px;
+        width: 60px;
+        padding: 13px 0;
+        line-height: 0;
+        border-radius: 50%;
+
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    /* for footer */
+    #footer h1 {
+        font-size: 3rem;
+    }
+
+    #footer h2 {
+        font-size: 1rem;
+    }
+
+
+    .icon-btn {
+        margin-top: 10px;
+        width: 40px;
+        padding: 4px 0;
+        line-height: 0;
+        border-radius: 50%;
+
+    }
+}
+
+@media screen and (max-width: 345px) {
+
+    /* for educational background section */
+    #skills h1 {
+        font-size: 4rem;
+    }
+    /* for about */
+    #about {
+        height: auto;
+        text-align: center;
+    }
+
+    #about img {
+        height: 10%;
+        width: 70%;
+
+    }
+
+
+    /* for footer */
+    #footer h1 {
+        font-size: 2rem;
+    }
+
+    #footer h2 {
+        font-size: 1rem;
+    }
+
+    #footer h3 {
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+
+    .footer-icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon-btn {
+       
+        margin-top: 20px;
+        width: 40px;
+        padding: 4px 0;
+        line-height: 0;
+        border-radius: 50%;
+
+    }
+}
+
+@media screen and (min-width: 250px) {
+    
+}
 
 
 
