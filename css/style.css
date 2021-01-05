@@ -10,12 +10,13 @@
 }
 
 
+/* header section */
 
 #home {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 img {
@@ -36,6 +37,8 @@ img {
     padding:0 35px;
     color: #333333;
 }
+
+/* background section */
 
 #background {
     background: url('../images/background.jpg') fixed 100%;
@@ -77,6 +80,8 @@ img {
   
 }
 
+/* skills section */
+
 #skills {
     
     background: #f2f2f2;
@@ -103,7 +108,7 @@ hr,h2,h3,p {
 
 }
 
-/* image slider */
+/* image slider container */
 
 .slide-container {
     width: 800px;
@@ -208,8 +213,15 @@ hr,h2,h3,p {
 .icon-btn:hover {
     background: #ffffff;
     transition: transform ease-in-out 0.5s;
+    -webkit-transition: transform ease-in-out 0.5s;
+    -moz-transition: transform ease-in-out 0.5s;
+    -o-transition: transform ease-in-out 0.5s;
+    -ms-transition: transform ease-in-out 0.5s;
     transform: rotate(720deg);
-    
+    -webkit-transform: rotate(720deg);
+    -moz-transform: rotate(720deg);
+    -o-transform: rotate(720deg);
+    -ms-transform: rotate(720deg);
 }
 
 #footer h3 {
@@ -236,20 +248,38 @@ hr,h2,h3,p {
         overflow-x: hidden;
     }
    
-    
+    /* header */
+    #home {
+        margin-bottom: 5px;
+    }
+
     #home img {
-        margin: 0;
+        margin-top: 1%;
     }
 
     .navbar ul li {
-        margin: 25px 0;
-        width: 25%;
+        margin: 10px 0;
+        width: 15%;
         padding: 0;
         text-align: center;
+    }
+
+    .navbar ul li a {
+        padding: 60px;
+    }
+}
+
+@media screen and (max-width: 872px) {
+     /* header */
+    .navbar ul li a {
+        padding-left: 3%;
     }
 }
 
 @media screen and (max-width: 800px) {
+    /* header */
+
+    /* image slider */
     .slide-container {
         width: 90%;
         height: auto;
@@ -264,7 +294,7 @@ hr,h2,h3,p {
 
     .slider-image {
         width: 100%;
-        height: 300px;
+        height: 400px;
     }
 
     .button-container {
@@ -283,7 +313,7 @@ hr,h2,h3,p {
     }
    
     .navbar {
-        width: 95;
+        width: 95%;
     }
 } 
 
@@ -323,9 +353,6 @@ hr,h2,h3,p {
 }
 
 @media screen and (max-width: 570px) {
-    body {
-        /* overflow-x: hidden; */
-    }
     
     /* for navbar */
     .burger-nav {
@@ -425,6 +452,10 @@ hr,h2,h3,p {
         height: 200px;
     }
 
+    .slider-image:nth-child(2) {
+        margin-top: 50px;
+    }
+
     #skills h1 {
         font-size: 4rem;
     }
@@ -467,11 +498,6 @@ hr,h2,h3,p {
     /* for image section */
     .typo {
         align-items: flex-start;
-    }
-
-    #background {
-        background: url('../images/background.jpg') fixed 100%;
-        width: 100%;   
     }
 
 
